@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    background-color:black;
+    transform-origin: center;
+}
+#ball {
+   animation: ball .5s ease;
+  }
+  
+  @keyframes ball {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(180deg);
+    }
+  }
+  #man {
+    animation: man .5s ease;
+  }
+  @keyframes man{
+      from{
+transform: translate(0px,0px) ;
+      }
+      to{
+        transform: translate(100px, 200px);
+      }
+  }
